@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventPlus - Agjenci Eventesh & Dasmash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">✨ EventPlus</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Kreu</a></li>
+        <li><a href="#services">Shërbime</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><button id="toggleDarkMode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Organizime që lënë gjurmë</h1>
+      <p>Dasma, evente private & korporate - kujdesemi për gjithçka!</p>
+      <button onclick="scrollToSection('contact')">Na Kontaktoni</button>
+    </div>
+  </section>
+
+  <section id="services" class="services fade-in">
+    <h2>Shërbimet Tona</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Dasma Luksoze</h3>
+        <p>Planifikim dhe realizim i plotë i dasmës suaj të ëndrrave.</p>
+      </div>
+      <div class="card">
+        <h3>Evente Private</h3>
+        <p>Ditëlindje, fejesa, baby showers - me elegancë dhe stil.</p>
+      </div>
+      <div class="card">
+        <h3>Evente Korporate</h3>
+        <p>Konferenca, seminare dhe festa biznesi me përpikëri.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery fade-in">
+    <h2>Galeria</h2>
+    <div class="images">
+      <img src="https://via.placeholder.com/300x200" alt="Dasmë" />
+      <img src="https://via.placeholder.com/300x200" alt="Event" />
+      <img src="https://via.placeholder.com/300x200" alt="Dekor" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Na Kontaktoni</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Emri juaj" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Mesazhi juaj..." required></textarea>
+      <button type="submit">Dërgo</button>
+    </form>
+    <p id="formMessage"></p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!..." 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EventPlus. Të gjitha të drejtat e rezervuara.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
