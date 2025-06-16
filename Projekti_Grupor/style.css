@@ -152,6 +152,41 @@ footer {
   }
 }
 
+/* Mode i errët */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode header, 
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #eee;
+}
+
+body.dark-mode nav ul li a {
+  color: #eee;
+}
+
+body.dark-mode .card {
+  background-color: #222;
+  color: #ddd;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #eee;
+  border: none;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+
 
 /* //////////Service/////////////// */
 
