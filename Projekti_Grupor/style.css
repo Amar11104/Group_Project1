@@ -172,3 +172,200 @@ footer {
 
 
 /* ////////////contact///////////// */
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contact-info p,
+.contact-info a {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #444;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 1em;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e73370;
+}
+
+.contact-section {
+  background: linear-gradient(135deg, #ffe6f0 0%, #ffb6c1 100%);
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.contact-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #4a1a2a; /* një ngjyrë më e errët rozë për kontrast */
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #6a2c3d;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 400px;
+  background-color: #fff0f5; /* rozë shumë e butë për blloqet */
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2); /* hije rozë */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: translateY(-5px);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #7a3b51; /* rozë më e errët */
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.contact-info li {
+  margin-bottom: 12px;
+}
+
+.contact-info a {
+  color: #ff1493; /* ngjyrë pink më intensive */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6d0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff0f5;
+  transition: border-color 0.3s;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  border-color: #ff69b4;
+  outline: none;
+}
+
+.contact-form form button {
+  background-color: #ff1493;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form form button:hover {
+  background-color: #e0137d;
+  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.5);
+}
+
+/* Responsive për pajisje mobile */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
