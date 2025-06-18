@@ -4,15 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EventPlus - Agjenci Eventesh & Dasmash</title>
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="logo">✨ EventPlus</div>
     <nav>
       <ul>
-        <!-- Ikona për Home (faqen kryesore) -->
-        <li><a href="index.html" title="Kreu" aria-label="Kreu">🏠</a></li>
+        <li><a href="index.html" title="Kreu" aria-label="Faqja fillestare">🏠</a></li>
         <li><a href="services.html" title="Shërbimet" aria-label="Shërbimet">🛠️</a></li>
         <li><a href="gallery.html" title="Galeria" aria-label="Galeria">🖼️</a></li>
         <li><a href="contact.html" title="Kontakt" aria-label="Kontakt">📞</a></li>
@@ -22,24 +21,21 @@
   </header>
 
   <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Organizime që lënë gjurmë</h1>
-      <p>Dasma, evente private & korporate - kujdesemi për gjithçka!</p>
-      <button onclick="window.location.href='contact.html'">Na Kontaktoni</button>
+  <div class="hero-content">
+    <h1>Organizime që lënë gjurmë</h1>
+    <p>Dasma, evente private & korporate - kujdesemi për gjithçka!</p>
+    <div class="button-group">
+      <button id="contactBtn" class="btn-primary">Na Kontaktoni</button>
+      <button id="servicesBtn" class="btn-secondary">Shërbimet</button>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <footer>
     <p>&copy; 2025 EventPlus. Të gjitha të drejtat e rezervuara.</p>
   </footer>
 
-  <script>
-    // Dark mode toggle
-    const toggleDarkModeBtn = document.getElementById('toggleDarkMode');
-    toggleDarkModeBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggleDarkModeBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
