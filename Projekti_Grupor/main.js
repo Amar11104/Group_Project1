@@ -25,3 +25,43 @@ servicesBtn.addEventListener("click", () => {
   window.location.href = "services.html";
 });
 
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const closeModal = document.getElementById('closeModal');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+galleryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    modalImage.src = item.src;
+    modalImage.alt = item.alt;
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    closeModal.focus();
+  });
+
+  // Hap modalin edhe me tastet Enter ose Space për aksesueshmëri
+  item.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      item.click();
+    }
+  });
+});
+
+// Mbyll modalin me klik në buton
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+  modal.setAttribute('aria-hidden', 'true');
+});
+
+// Mbyll modalin me tastin Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.style.display === 'flex') {
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+  }
+});
+
+
+
+
