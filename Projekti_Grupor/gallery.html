@@ -2,23 +2,100 @@
 <html lang="sq">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EventPlus - Agjenci Eventesh & Dasmash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria - EventPlus</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+    <header>
     <div class="logo">✨ EventPlus</div>
     <nav>
       <ul>
-        <li><a href="#home">Kreu</a></li>
-        <li><a href="#services">Shërbime</a></li>
-        <li><a href="#gallery">Galeria</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <li><button id="toggleDarkMode">🌙</button></li>
+        <li><a href="index.html" title="Kreu" aria-label="Faqja fillestare">🏠</a></li>
+        <li><a href="services.html" title="Shërbimet" aria-label="Shërbimet">🛠️</a></li>
+        <li><a href="gallery.html" title="Galeria" aria-label="Galeria">🖼️</a></li>
+        <li><a href="contact.html" title="Kontakt" aria-label="Kontakt">📞</a></li>
+        <li><button id="toggleDarkMode" aria-label="Ndrysho temën">🌙</button></li>
       </ul>
     </nav>
   </header>
+
+  <h1>Galeria e Dasmave</h1>
+
+  <div class="gallery-grid">
+    <img src= "images/dasma 3.jpg" />
+    <img src="images/dasmat 2.jpg" alt="Dasma 2" />
+    <img src="images/dasma 4.jpg" alt="Dasma 3" />
+    <img src="images/dasma 5.jpg" alt="Dasma 4" />
+    <img src="images/dasma 6.jpg" alt="Dasma 5" />
+    <img src="images/dasma 1.jpg" alt="Dasma 6" />
+    <img src="images/dasma 12.jpg" alt="Dasma 5" />
+    <img src="images/dasma 11.jpg" alt="Dasma 6" />
+  </div>
+
+  <!-- Modal për foto -->
+  <div id="modal" class="modal">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Foto e madhe" />
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const closeModal = document.getElementById('closeModal');
+    const images = document.querySelectorAll('.gallery-grid img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = 'block';
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+      if(e.target === modal){
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+
+
+
+  <section class="gallery">
+  <h2 class="gallery-title">Galeria e EventPlus</h2>
+  <div class="gallery-grid">
+    <img src="images/dasma 7.jpg" alt="Pamje nga eventi 1" tabindex="0" class="gallery-item" />
+    <img src="images/dasma 8.jpg" alt="Pamje nga eventi 2" tabindex="0" class="gallery-item" />
+    <img src="images/dasma 9.jpg" alt="Pamje nga eventi 3" tabindex="0" class="gallery-item" />
+    <img src="images/dasma 10.jpg" alt="Pamje nga eventi 4" tabindex="0" class="gallery-item" />
+  </div>
+</section>
+
+
+
+
+<section class="gallery">
+  <h2 class="gallery-title">Galeria e Oborrit</h2>
+  <div class="gallery-grid">
+    <img src="images/oborri.jpg" alt="Pamje nga eventi 1" tabindex="0" class="gallery-item" />
+    <img src="images/oborri 2.jpg" alt="Pamje nga eventi 2" tabindex="0" class="gallery-item" />
+    <img src="images/oborri 3.jpg" alt="Pamje nga eventi 3" tabindex="0" class="gallery-item" />
+    <img src="images/oborri 4.jpg" alt="Pamje nga eventi 4" tabindex="0" class="gallery-item" />
+    
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
 
 
 
