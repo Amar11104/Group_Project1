@@ -210,19 +210,28 @@ body.dark-mode footer {
 
 .video-section {
   width: 100%;
-  max-height: 400px; /* ose sa dëshiron lartësinë */
+  max-height: auto; 
   overflow: hidden;
   margin-top: 2rem;
 }
 
 .video-section video {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* mbulon kutinë duke ruajtur përmasa */
+  height: auto;
+  object-fit: cover; 
   display: block;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+.video-section {
+  width: 100%;
+  max-height: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 3rem; /* kjo ndihmon për skrollim të butë deri në fund */
+}
+
 
 
 
@@ -368,7 +377,7 @@ body.dark-mode footer {
 .contact-form button {
   margin-top: 20px;
   padding: 12px 20px;
-  background-color: #ff4081;
+  background-color: #8d3f59;
   color: white;
   border: none;
   border-radius: 5px;

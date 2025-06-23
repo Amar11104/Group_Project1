@@ -25,3 +25,5 @@ servicesBtn.addEventListener("click", () => {
   window.location.href = "services.html";
 });
 
+<div style="height: 300px;"></div>
+
