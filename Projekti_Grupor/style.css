@@ -208,6 +208,23 @@ body.dark-mode footer {
   color: #ff6f61;
 }
 
+.video-section {
+  width: 100%;
+  max-height: 400px; /* ose sa dëshiron lartësinë */
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mbulon kutinë duke ruajtur përmasa */
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
 
 
 
