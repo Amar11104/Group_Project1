@@ -210,19 +210,28 @@ body.dark-mode footer {
 
 .video-section {
   width: 100%;
-  max-height: 400px; /* ose sa dëshiron lartësinë */
+  max-height: auto; 
   overflow: hidden;
   margin-top: 2rem;
 }
 
 .video-section video {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* mbulon kutinë duke ruajtur përmasa */
+  height: auto;
+  object-fit: cover; 
   display: block;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+.video-section {
+  width: 100%;
+  max-height: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 3rem; /* kjo ndihmon për skrollim të butë deri në fund */
+}
+
 
 
 
@@ -292,6 +301,126 @@ body.dark-mode footer {
 
 
 /* ///////.gallery////////////////// */
+/* Stilet bazë për faqen */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Titulli */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Rrjeti i galerise */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Fotot e vogla në galeri */
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal (dritarja që shfaq foton e madhe) */
+.modal {
+  display: none; /* fshehur në fillim */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fotoja e madhe brenda modalit */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+/* Animacion për hapjen e modalit */
+@keyframes zoomIn {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+/* Butoni për mbyllje (X) */
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #ddd;
+}
+
+/* Për pajisje me ekran më të vogël */
+@media (max-width: 600px) {
+  .gallery-grid img {
+    height: 120px;
+  }
+}
+
+.gallery {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.05);
+  outline: 3px solid #007BFF; /* ose ngjyrë tjetër */
+}
+
 
 
 
@@ -368,7 +497,11 @@ body.dark-mode footer {
 .contact-form button {
   margin-top: 20px;
   padding: 12px 20px;
-  background-color: #ff4081;
+<<<<<<< HEAD
+  background-color: #8d3f59;
+=======
+  background-color: #da9945;
+>>>>>>> 6a28bba2cb0732bd9fe22da6f473e01167ec7f21
   color: white;
   border: none;
   border-radius: 5px;
@@ -378,7 +511,7 @@ body.dark-mode footer {
 }
 
 .contact-form button:hover {
-  background-color: #e73370;
+  background-color: #da9945;
 }
 
 .contact-section {
@@ -449,7 +582,7 @@ body.dark-mode footer {
 }
 
 .contact-info a {
-  color: #ff1493; /* ngjyrë pink më intensive */
+  color: #da9945; /* ngjyrë pink më intensive */
   text-decoration: none;
   font-weight: 600;
 }
@@ -468,12 +601,12 @@ body.dark-mode footer {
 
 .contact-form form input:focus,
 .contact-form form textarea:focus {
-  border-color: #ff69b4;
+  border-color: #da9945;
   outline: none;
 }
 
 .contact-form form button {
-  background-color: #ff1493;
+  background-color: #da9945;
   color: white;
   padding: 14px 30px;
   border: none;
@@ -484,8 +617,8 @@ body.dark-mode footer {
 }
 
 .contact-form form button:hover {
-  background-color: #e0137d;
-  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.5);
+  background-color:#da9945;
+  box-shadow: 0 6px 16px rgba(212, 120, 58, 0.5);
 }
 
 /* Responsive për pajisje mobile */
@@ -499,4 +632,10 @@ body.dark-mode footer {
     width: 100%;
   }
 }
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 1rem; /* pak hapësirë poshtë */
+}
+
 
