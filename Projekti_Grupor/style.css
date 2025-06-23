@@ -351,7 +351,7 @@ body.dark-mode footer {
 .contact-form button {
   margin-top: 20px;
   padding: 12px 20px;
-  background-color: #ff4081;
+  background-color: #da9945;
   color: white;
   border: none;
   border-radius: 5px;
@@ -361,7 +361,7 @@ body.dark-mode footer {
 }
 
 .contact-form button:hover {
-  background-color: #e73370;
+  background-color: #da9945;
 }
 
 .contact-section {
@@ -432,7 +432,7 @@ body.dark-mode footer {
 }
 
 .contact-info a {
-  color: #ff1493; /* ngjyrë pink më intensive */
+  color: #da9945; /* ngjyrë pink më intensive */
   text-decoration: none;
   font-weight: 600;
 }
@@ -451,12 +451,12 @@ body.dark-mode footer {
 
 .contact-form form input:focus,
 .contact-form form textarea:focus {
-  border-color: #ff69b4;
+  border-color: #da9945;
   outline: none;
 }
 
 .contact-form form button {
-  background-color: #ff1493;
+  background-color: #da9945;
   color: white;
   padding: 14px 30px;
   border: none;
@@ -467,8 +467,8 @@ body.dark-mode footer {
 }
 
 .contact-form form button:hover {
-  background-color: #e0137d;
-  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.5);
+  background-color:#da9945;
+  box-shadow: 0 6px 16px rgba(212, 120, 58, 0.5);
 }
 
 /* Responsive për pajisje mobile */
